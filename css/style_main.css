@@ -6,6 +6,8 @@ body  {
   margin: 0px;
   padding: 0px;
   font-family: 'Roboto', sans-serif;
+  color: #3d3d3d;
+
 }
 
 .clearfix:after {
@@ -30,7 +32,7 @@ body  {
   display: flex;
 }
 
-/* Базовй стиль кнопок */
+/* Базовый стиль кнопок */
 .btn {
     background-color: #ffb544; /* Оранжевый */
     color: white;
@@ -80,7 +82,7 @@ a:hover {
 /* Контейнер для заголовка */
 .promo-text-container {
     float: left;
-    width: 450px;
+    width: 430px;
 }
 
 /* Сброс отступов в Промо контейнере */
@@ -88,22 +90,17 @@ a:hover {
   margin: 0px;
 }
 
-/* Сброс стилизации ссылок для контейнера */
-/* .promo-text-container a,
-a:hover {
-    color: inherit;
-    text-decoration: none;
-} */
-
 .promo-text-title  {
   font-size: 64px;
   font-weight: 700;
   margin-top: 80px;
+  text-decoration: underline;
 }
 
 .promo-text-describe {
   margin-top: 20px;
   font-size: 20px;
+  font-style: italic;
 }
 
 .promo-img-container  {
@@ -208,7 +205,7 @@ a:hover {
 /* Контейнер для кнопок */
 .button-container {
   position: absolute;
-  bottom: 5%;
+  bottom: 4%;
   left: 5px;
 }
 
@@ -265,5 +262,5 @@ a:hover {
 .main-footer  {
   min-height: 200px;
   width: 100%;
-  background-color: #666666;
+  background-color: white;
 }
