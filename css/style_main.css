@@ -13,10 +13,12 @@ body  {
     clear: both;
 }
 
+
 /* .otl {
   outline: 1px solid black;
 } */
 
+/* Центровщик */
 .center-wrapper {
   min-height: inherit;
   width: 1000px;
@@ -27,6 +29,7 @@ body  {
   display: flex;
 }
 
+/* Базовй стиль кнопок */
 .btn {
     background-color: #ffb544; /* Оранжевый */
     color: white;
@@ -37,22 +40,40 @@ body  {
     font-size: 13px;
 }
 
+/* Сброс отступов у заголовков */
+h1,
+h2,
+h3  {
+  margin: 0px;
+}
+
+/* Базовый стиль для заголовка секций */
+.section-title {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 /* Сброс стилей для ссылок */
 a,
 a:hover {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
+/* Отступ от начала секции когда есть заголовок */
+.center-wrapper h2  {
+  padding-top: 20px;
+}
 
 /* ================ Промо секция ================ */
 /* Базовые стили секции */
 .promo  {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   min-height: 350px;
   width: inherit;
-  background-color: ;
+  background-color: white;
 }
 
 /* Контейнер для заголовка */
@@ -61,7 +82,7 @@ a:hover {
     width: 450px;
 }
 
-/* Сброс отступов */
+/* Сброс отступов в Промо контейнере */
 .promo-text-container * {
   margin: 0px;
 }
@@ -105,8 +126,8 @@ a:hover {
   background-color: #f4f4f4;
 }
 
-/* Применяется к классу .flex ТОЛЬКО когда он вложен в .features */
-.features .flex {
+/* Флекс стили */
+.features-container {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
@@ -114,7 +135,7 @@ a:hover {
 
 /* Карточки преимуществ */
 .features-item  {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   flex-basis: 220px;
   text-align: center;
 }
@@ -127,7 +148,7 @@ a:hover {
 /* Стили текста в преимуществах */
 .features-item p {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 /* ================ Секция с продукцией ================ */
@@ -204,8 +225,26 @@ a:hover {
   outline: 1px solid #ffb544;
 }
 
-/* ================ Секция с ценами ================ */
+/* ================ Секция с видео тестами ================ */
 
+.test {
+  min-height: 380px;
+  background-color: white;
+}
+
+.test-content-wrapper {
+  flex-direction: row;
+  flex-shrink: 0;
+  flex-grow: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.test-text-container  {
+  min-width: 350px;
+  max-width: 400px;
+  line-height: 1.4;
+}
 
 /* ================ Футер ================ */
 
