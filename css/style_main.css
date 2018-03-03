@@ -151,6 +151,23 @@ a:hover {
 
 /* ================ Секция с продукцией ================ */
 /* Базовые стили */
+.benefit  {
+
+}
+
+.benefits-container {
+  flex-flow: column;
+}
+
+.benefits-item  {
+
+}
+
+
+
+
+/* ================ Секция с продукцией ================ */
+/* Базовые стили */
 .product  {
   min-height: 600px;
   width: inherit;
