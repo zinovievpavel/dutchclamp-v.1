@@ -57,6 +57,12 @@ h3  {
   margin-bottom: 20px;
 }
 
+.item-title {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
 /* Сброс стилей для ссылок */
 a,
 a:hover {
@@ -132,6 +138,7 @@ a:hover {
 .features-item  {
   min-height: 200px;
   width: 900px;
+  padding: 20px;
   margin-bottom: 20px;
   background-color: white;
 }
@@ -199,7 +206,8 @@ a:hover {
 }
 
 .product-item:hover {
-  box-shadow: 0px 0px 19px rgba(0,0,0,0.5); /* Тень */
+  transition: linear 0.3s;
+  box-shadow: 0px 0px 12px rgba(0,0,0,0.5); /* Тень */
 }
 
 /* Стили имени продукта */
@@ -225,7 +233,8 @@ a:hover {
 }
 
 /* Стили для кнопки при наведении мыши */
-.product-item .btn:hover  {
+.product-item .btn:hover
+.product-item .btn:focus  {
   background-color: white;
   transition: linear 0.15s;
   outline: 1px solid #ffb544;
